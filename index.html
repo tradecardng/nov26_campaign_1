@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>TradeCard · Trade Back Stronger</title>
-<meta name="description" content="Trade Back Stronger, 17 Nov – 6 Dec: every trade adds up to a tier, and each tier unlocks a coupon bundle, up to ₦250,000.">
+<meta name="description" content="Trade Back Stronger, 14 Nov – 6 Dec: every trade adds up to a tier, and each tier unlocks a coupon bundle, up to ₦250,000.">
 <!-- Google Analytics 4 (Measurement ID: G-1N7E43J2MK) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1N7E43J2MK"></script>
 <script>
@@ -34,7 +34,7 @@ button,input{font:inherit}
 
 /* hero */
 .hero{position:relative;background:var(--blue);color:#fff;padding:22px 16px 28px;border-bottom:4px solid var(--navy);overflow:hidden}
-.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.17) 1.6px,transparent 1.8px);background-size:22px 22px}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.) 1.6px,transparent 1.8px);background-size:22px 22px}
 .hin{position:relative;max-width:520px;margin:0 auto}
 .tag{display:inline-flex;align-items:center;gap:6px;background:var(--lime);color:var(--navy);border:3px solid var(--navy);border-radius:10px;padding:3px 10px;font-weight:900;font-size:12px;letter-spacing:1.5px;box-shadow:3px 4px 0 var(--navy)}
 .hero h1{margin-top:14px;font-weight:900;font-size:clamp(22px,6.6vw,28px);line-height:1.02;letter-spacing:-.6px;text-transform:uppercase}
@@ -54,8 +54,8 @@ h2{font-size:22px;font-weight:900;letter-spacing:-.5px;line-height:1.15;margin-t
 .t{display:flex;align-items:center;gap:12px;background:#fff;border:3px solid var(--navy);border-radius:16px;padding:10px 12px;box-shadow:4px 5px 0 var(--navy)}
 .t .n{flex:none;width:46px;height:46px;border-radius:12px;background:var(--navy);color:var(--lime);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;line-height:1}
 .t .n small{font-size:9px;letter-spacing:1px;color:#fff}.t .n b{font-size:20px}
-.t .m{flex:1;min-width:0}.t .m small{display:block;font-size:11.5px;font-weight:800;letter-spacing:.6px;color:var(--ink2)}.t .m b{display:block;font-weight:900;font-size:17px;letter-spacing:-.4px}
-.t .v{text-align:right}.t .v small{display:block;font-size:11px;font-weight:800;color:var(--ink2)}.t .v b{font-weight:900;font-size:clamp(17px,5vw,20px);letter-spacing:-.5px;white-space:nowrap}
+.t .m{flex:1;min-width:0}.t .m small{display:block;font-size:11.5px;font-weight:800;letter-spacing:.6px;color:var(--ink2)}.t .m b{display:block;font-weight:900;font-size:px;letter-spacing:-.4px}
+.t .v{text-align:right}.t .v small{display:block;font-size:11px;font-weight:800;color:var(--ink2)}.t .v b{font-weight:900;font-size:clamp(px,5vw,20px);letter-spacing:-.5px;white-space:nowrap}
 .t.top{background:var(--lime)}
 .t.me{outline:4px solid var(--blue);outline-offset:2px}
 .tnote{margin-top:12px;font-size:13px;font-weight:600;color:var(--ink2)}
@@ -121,7 +121,7 @@ footer{text-align:center;font-size:12.5px;color:var(--ink2);margin-top:24px}
 </div></div>
 
 <header class="hero"><div class="hin">
-  <span class="tag" id="dates">17 NOV – 6 DEC</span>
+  <span class="tag" id="dates">14 NOV – 6 DEC</span>
   <h1>Trade back<b>stronger</b></h1>
   <p>Bring all your cards to TradeCard. Every trade adds up to a tier, and every tier unlocks a coupon bundle, up to ₦250,000.</p>
   <div class="cd"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><span id="cdTxt"></span></div>
@@ -132,7 +132,7 @@ footer{text-align:center;font-size:12.5px;color:var(--ink2);margin-top:24px}
   <section aria-labelledby="th">
     <div class="eb">THE TIERS</div>
     <h2 id="th">The more you trade, the more you get back</h2>
-    <p class="lead">Add up your completed trades from 17 Nov to 6 Dec. Reach a tier to unlock its full reward.</p>
+    <p class="lead">Add up your completed trades from 14 Nov to 6 Dec. Reach a tier to unlock its full reward.</p>
     <div class="tiers" id="tiers"></div>
     <p class="tnote">Rewards are totals, not extra per tier: reaching Tier 3 gives you ₦21,000 in coupons in total. Amounts are based on your naira payout.</p>
   </section>
@@ -141,7 +141,7 @@ footer{text-align:center;font-size:12.5px;color:var(--ink2);margin-top:24px}
     <div class="eb">TIER CALCULATOR</div>
     <h2 id="ch">Which tier could you reach?</h2>
     <div class="calc">
-      <label for="amt">Your total trades from 17 Nov to 6 Dec</label>
+      <label for="amt">Your total trades from 14 Nov to 6 Dec</label>
       <div class="field"><span>₦</span><input id="amt" inputmode="numeric" autocomplete="off" value="1,500,000" aria-label="Amount traded in naira"></div>
       <div class="chips" id="chips"><button data-v="300000">₦300k</button><button data-v="1000000">₦1M</button><button data-v="3000000">₦3M</button><button data-v="6000000">₦6M</button><button data-v="12000000">₦12M</button></div>
       <div class="res"><div class="top"><b id="rw"></b><span id="rt"></span></div><div class="bar"><i id="bar"></i></div><p id="nx"></p></div>
@@ -152,7 +152,7 @@ footer{text-align:center;font-size:12.5px;color:var(--ink2);margin-top:24px}
     <div class="eb">HOW IT WORKS</div>
     <h2 id="hw">No sign-up needed</h2>
     <ol class="steps">
-      <li class="st"><div class="n">1</div><div><b>Trade on TradeCard as usual</b><span>Every completed trade from 17 Nov to 6 Dec counts automatically.</span></div></li>
+      <li class="st"><div class="n">1</div><div><b>Trade on TradeCard as usual</b><span>Every completed trade from 14 Nov to 6 Dec counts automatically.</span></div></li>
       <li class="st"><div class="n">2</div><div><b>Your trades add up</b><span>All your trades during the campaign count toward one total.</span></div></li>
       <li class="st"><div class="n">3</div><div><b>Unlock your tier reward</b><span>When you reach a tier, the coupon bundle is credited within 48 hours and stays valid for 14 days.</span></div></li>
       <li class="st"><div class="n">4</div><div><b>Use your coupons on your next trades</b><span>Find them on the Coupons page. One coupon per order.</span></div></li>
@@ -170,7 +170,7 @@ footer{text-align:center;font-size:12.5px;color:var(--ink2);margin-top:24px}
   <section aria-labelledby="fh">
     <div class="eb">FAQ</div>
     <h2 id="fh">Questions</h2>
-    <details><summary>Do I need to sign up?</summary><div class="bd">No. Every completed trade from 17 Nov to 6 Dec counts automatically.</div></details>
+    <details><summary>Do I need to sign up?</summary><div class="bd">No. Every completed trade from 14 Nov to 6 Dec counts automatically.</div></details>
     <details><summary>Which trades count?</summary><div class="bd">Completed (settled) gift card trades, based on your naira payout. Rejected, cancelled or reversed trades don't count.</div></details>
     <details><summary>Do I get every tier's reward?</summary><div class="bd">Each tier shows your total reward. If you reach Tier 3, you receive ₦21,000 in coupons in total, credited as you reach each tier.</div></details>
     <details><summary>When do I get my coupons?</summary><div class="bd">Within 48 hours of reaching a tier. They're valid for 14 days and appear on your Coupons page.</div></details>
@@ -197,7 +197,7 @@ footer{text-align:center;font-size:12.5px;color:var(--ink2);margin-top:24px}
    drawUrl       : weekly draw page link, stored encoded so it isn't shown as plain text (keep as is)
    Google Analytics: the Measurement ID is set in the snippet at the top of this file (G-1N7E43J2MK)  */
 var CONFIG = {
-  start: "2026-11-17T00:00:00+01:00",
+  start: "2026-11-14T00:00:00+01:00",
   end:   "2026-12-06T23:59:59+01:00",
   payoutTime: "2–3 minutes",
   drawUrl: "aHR0cHM6Ly90cmFkZWNhcmRuZy5naXRodWIuaW8vdGMtd2Vla2x5LWRyYXcv"
